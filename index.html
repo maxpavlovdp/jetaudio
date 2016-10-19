@@ -1,77 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="src/styles.css">
-    <link rel="stylesheet" href="src/speedometr.css">
+    <meta charset="UTF-8">
+    <title>ZE-Booster</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic%7CAudiowide:400&amp;subset=latin,latin-ext,greek,hebrew,vietnamese,arabic,devanagari,cyrillic,cyrillic-ext,khmer,greek-ext,tamil,thai,telugu,bengali,gujarati">
 </head>
-
-<head>
-    <script type="text/javascript" src='src/js/lib/jquery-3.0.0.js'></script>
-    <script type="text/javascript" src="src/js/lib/jquery.mousewheel.min.js"></script>
-
-    <script type="text/javascript" src="src/js/zeBoosterInitializer.js"></script>
-    <script type="text/javascript" src="src/js/zeBoosterCore.js"></script>
-    <script type="text/javascript" src="src/js/speedometer.js"></script>
-</head>
-
-<body>
-<div class="hover-container">
-    <section class="tachometer-container">
-        <input class="volume-control" type="range" orient="vertical" min="0" max="10" step="0.2" value="2">
-        <input class="pedal-control" type="range" orient="vertical" min="0" max="800" step="1" value="0">
-        <div class="tachometer">
-            <div class="inner-ring"></div>
-            <div class="outer-ring"><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span><span
-                    class="tick"></span><span class="tick"></span><span class="tick"></span><span class="tick"></span>
-            </div>
-            <div class="digit-ring">
-                <span class="digit">0</span>
-                <span class="digit">20</span>
-                <span class="digit">40</span>
-                <span class="digit">60</span>
-                <span class="digit">80</span>
-                <span class="digit">100</span>
-                <span class="digit">120</span>
-                <span class="digit">140</span>
-                <span class="digit">160</span>
-                <span class="digit">180</span>
-                <span class="digit">200</span>
-                <span class="digit">220</span>
-                <span class="digit">240</span>
-                <span class="digit">260</span>
-            </div>
-            <div class="details">
-                <p class="speed"></p>
-                <p class="unit"></p>
-            </div>
-            <div class="progress"></div>
-            <footer class="visualizer">
-                <canvas id="visualizer" width="480" height="100"></canvas>
-            </footer>
-        </div>
-        <div class="overlay"></div>
-    </section>
-</div>
-
-
-</body>
+    <body>
+        <div id="content"></div>
+        <script src="build/bundle.js"></script>
+    </body>
 </html>
