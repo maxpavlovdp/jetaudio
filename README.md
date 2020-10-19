@@ -1,7 +1,6 @@
 
-Website:
-
-https://maxpavlovdp.github.io/jetaudio/
+Website: https://maxpavlovdp.github.io/jetaudio/
+Jira: https://esound.myjetbrains.com/youtrack/agiles/87-0/91-1
 
 Our Mission:
 Boost transition from ICE to electric cars.
